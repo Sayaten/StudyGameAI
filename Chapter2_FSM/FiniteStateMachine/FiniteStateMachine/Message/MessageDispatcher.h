@@ -24,4 +24,4 @@ public:
 	void DispatchDelayedMessages();
 };
 
-#define Dispatch MessageDispatcher::GetInstance();
+#define Dispatch MessageDispatcher::GetInstance()

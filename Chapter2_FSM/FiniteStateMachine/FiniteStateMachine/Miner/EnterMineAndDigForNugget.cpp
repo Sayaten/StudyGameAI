@@ -1,8 +1,17 @@
 #include "EnterMineAndDigForNugget.h"
 
 #include <iostream>
+#include "../Global/GlobalFunctions.h"
 
 using namespace std;
+
+EnterMineAndDigForNugget* EnterMineAndDigForNugget::GetInstance()
+{
+	if (instance == NULL)
+		instance = new EnterMineAndDigForNugget;
+
+	return instance;
+}
 
 void EnterMineAndDigForNugget::Enter(Miner* pMiner)
 {
@@ -37,4 +46,9 @@ void EnterMineAndDigForNugget::Exit(Miner* pMiner)
 {
 	cout << "\n" << , GetNameOfEntity(pMiner->GetID()) << ": "
 			<< "Ah'm leavin' the gold mine mahpockets full o' sweet gold";
+}
+
+bool EnterMineAndDigForNugget::OnMessage(Miner* pMiner, const Telegram& msg)
+{
+	return false;
 }

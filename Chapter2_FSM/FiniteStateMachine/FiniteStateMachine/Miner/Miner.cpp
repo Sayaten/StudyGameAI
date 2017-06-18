@@ -34,3 +34,14 @@ void Miner::ChangeState(State<Miner>* pNewState)
 
 	m_pCurrentState->Enter(this);
 }
+
+void Miner::RevertToPreviousState()
+{
+	m_pPreviousState = m_pCurrentState;
+	m_pCurrentState = m_pGlobalState;
+}
+
+bool Miner::HandleMessage(const Telegram& msg)
+{
+	return m_pStateMachine->HandleMessage(msg);
+}

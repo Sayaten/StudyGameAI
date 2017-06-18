@@ -1,5 +1,8 @@
 #pragma once
 
+#define SEND_MSG_IMMEDIATELY 0
+#define NO_ADDITIONAL_INFO 0
+
 enum message_type
 {
 	Msg_HiHoneyImHome = 0,

@@ -13,51 +13,99 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\Miner">
+      <UniqueIdentifier>{dcf4010f-ba9c-4ca1-b174-be3f540518cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Global">
+      <UniqueIdentifier>{3d18c9dd-92c5-4c7f-a6e0-e2d2a8ea2e04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Wife">
+      <UniqueIdentifier>{24833c0b-debd-4d55-aa28-b7465e072483}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\StateMachine">
+      <UniqueIdentifier>{14cb86a6-31ec-4dd6-9b8d-ea8da869347f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Miner">
+      <UniqueIdentifier>{5ab64877-8b8d-4ee1-afce-ebbb152e9dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Global">
+      <UniqueIdentifier>{378cb5d6-e095-4128-b059-2549d1d37896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\StateMachine">
+      <UniqueIdentifier>{072d77c3-dc27-490b-a16c-b5c7b4ec27c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Wife">
+      <UniqueIdentifier>{c6f8c40e-2609-452e-bdaf-391da4b59ce3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseGameEntity.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Miner.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="State.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="EnterMineAndDigForNugget.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="StateMachine.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="Telegram.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="EntityManager.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="MessageDispatcher.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
+    <ClCompile Include="Miner\EnterMineAndDigForNugget.cpp">
+      <Filter>소스 파일\Miner</Filter>
+    </ClCompile>
+    <ClCompile Include="Miner\GoHomeAndSleepTilRested.cpp">
+      <Filter>소스 파일\Miner</Filter>
+    </ClCompile>
+    <ClCompile Include="Miner\Miner.cpp">
+      <Filter>소스 파일\Miner</Filter>
+    </ClCompile>
+    <ClCompile Include="Global\BaseGameEntity.cpp">
+      <Filter>소스 파일\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Global\GlobalFunctions.cpp">
+      <Filter>소스 파일\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Global\Main.cpp">
+      <Filter>소스 파일\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="StateMachine\StateMachine.cpp">
+      <Filter>소스 파일\StateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="Wife\Wife.cpp">
+      <Filter>소스 파일\Wife</Filter>
+    </ClCompile>
+    <ClCompile Include="Global\EntityManager.cpp">
+      <Filter>소스 파일\Global</Filter>
+    </ClCompile>
+    <ClCompile Include="Wife\WifesGlobalState.cpp">
+      <Filter>소스 파일\Wife</Filter>
+    </ClCompile>
+    <ClCompile Include="Wife\CookStew.cpp">
+      <Filter>소스 파일\Wife</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BaseGameEntity.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Miner.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="EnterMineAndDigForNugget.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="StateMachine.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="Main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="MessageDispatcher.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <ClInclude Include="Miner\EnterMineAndDigForNugget.h">
+      <Filter>헤더 파일\Miner</Filter>
+    </ClInclude>
+    <ClInclude Include="Miner\GoHomeAndSleepTilRested.h">
+      <Filter>헤더 파일\Miner</Filter>
+    </ClInclude>
+    <ClInclude Include="Miner\Miner.h">
+      <Filter>헤더 파일\Miner</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\State.h">
+      <Filter>헤더 파일\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="StateMachine\StateMachine.h">
+      <Filter>헤더 파일\StateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="Wife\Wife.h">
+      <Filter>헤더 파일\Wife</Filter>
+    </ClInclude>
+    <ClInclude Include="Wife\WifesGlobalState.h">
+      <Filter>헤더 파일\Wife</Filter>
+    </ClInclude>
+    <ClInclude Include="Global\BaseGameEntity.h">
+      <Filter>헤더 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Global\EntityManager.h">
+      <Filter>헤더 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Global\GlobalFunctions.h">
+      <Filter>헤더 파일\Global</Filter>
+    </ClInclude>
+    <ClInclude Include="Wife\CookStew.h">
+      <Filter>헤더 파일\Wife</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

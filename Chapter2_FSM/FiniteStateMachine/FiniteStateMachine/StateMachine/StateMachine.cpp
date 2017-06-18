@@ -22,16 +22,28 @@ void StateMachine::ChangeState(State<entity_type>* pNewState)
 	m_pCurrentState->Enter(m_pOwner);
 }
 
-template <class entity_type>
 void StateMachine::RevertToPreviousState()
 {
 	ChangeState(m_pCurrentState);
 }
 
 template <class entity_type>
-bool IsInState(const State<entity_type>& st > 
+bool StateMachine::IsInState(const State<entity_type>& st )
 {
 	
 }
 
+bool StateMachine::HandleMessage(const Telegram& msg)
+{
+	if(m_pCurrentState && m_pCurrentState->OnMessage(m_pOwner, msg))
+	{
+		return true;
+	}
 
+	if(m_pGlobalState && m_pGlobalState->OnMessage(m_pOwner, msg))
+	{
+		return true;
+	}
+
+	return false;
+}

@@ -8,8 +8,9 @@ class EntityManager
 private:
 	typedef std::map<int, BaseGameEntity*> EntityMap;
 
-public:
+private:
 	EntityMap m_EntityMap;
+	static EntityManager* instance;
 
 	EntityManager(){}
 	EntityManager(const EntityManager&);

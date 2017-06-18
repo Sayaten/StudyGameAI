@@ -18,6 +18,32 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Global\BaseGameEntity.cpp" />
+    <ClCompile Include="Global\EntityManager.cpp" />
+    <ClCompile Include="Global\GlobalFunctions.cpp" />
+    <ClCompile Include="Global\Main.cpp" />
+    <ClCompile Include="Miner\EnterMineAndDigForNugget.cpp" />
+    <ClCompile Include="Miner\GoHomeAndSleepTilRested.cpp" />
+    <ClCompile Include="Miner\Miner.cpp" />
+    <ClCompile Include="StateMachine\StateMachine.cpp" />
+    <ClCompile Include="Wife\CookStew.cpp" />
+    <ClCompile Include="Wife\Wife.cpp" />
+    <ClCompile Include="Wife\WifesGlobalState.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Global\BaseGameEntity.h" />
+    <ClInclude Include="Global\EntityManager.h" />
+    <ClInclude Include="Global\GlobalFunctions.h" />
+    <ClInclude Include="Miner\EnterMineAndDigForNugget.h" />
+    <ClInclude Include="Miner\GoHomeAndSleepTilRested.h" />
+    <ClInclude Include="Miner\Miner.h" />
+    <ClInclude Include="StateMachine\State.h" />
+    <ClInclude Include="StateMachine\StateMachine.h" />
+    <ClInclude Include="Wife\CookStew.h" />
+    <ClInclude Include="Wife\Wife.h" />
+    <ClInclude Include="Wife\WifesGlobalState.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{E9463113-0DFF-4B3D-AFB3-41C6E23D68FC}</ProjectGuid>
@@ -138,24 +164,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="BaseGameEntity.h" />
-    <ClInclude Include="EnterMineAndDigForNugget.h" />
-    <ClInclude Include="EntityManager.h" />
-    <ClInclude Include="MessageDispatcher.h" />
-    <ClInclude Include="Miner.h" />
-    <ClInclude Include="State.h" />
-    <ClInclude Include="StateMachine.h" />
-    <ClInclude Include="Telegram.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="BaseGameEntity.cpp" />
-    <ClCompile Include="EnterMineAndDigForNugget.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="MessageDispatcher.cpp" />
-    <ClCompile Include="Miner.cpp" />
-    <ClCompile Include="StateMachine.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

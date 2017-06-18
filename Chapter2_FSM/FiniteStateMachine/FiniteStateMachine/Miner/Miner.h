@@ -1,8 +1,9 @@
 #pragma once
 
-#include "BaseGameEntity.h"
-#include "State.h"
-#include "StateMachine.h"
+#include "../Global/BaseGameEntity.h"
+#include "../Message/Telegram.h"
+#include "../StateMachine/State.h"
+#include "../StateMachine/StateMachine.h"
 
 #define MAX_GOLD_COUNT 10
 #define MAX_THIRSTY_AMOUNT 10
@@ -36,4 +37,6 @@ public:
 
 	bool IsPocketsFull() { return m_iGoldCarried == MAX_GOLD_COUNT;  }
 	bool IsThirsty() { return m_iThirst == MAX_THIRSTY_AMOUNT;  }
+
+	bool HandleMessage(const Telegram& msg);
 };

@@ -25,5 +25,7 @@ public:
 	void ChangeState(State<entity_type>* pNewState);
 	void RevertToPreviousState();
 
-	bool IsInState(const State<entity_type>& st > const;
+	bool IsInState(const State<entity_type>& st ) const;
+
+	bool HandleMessage(const Telegram& msg) const;
 };
